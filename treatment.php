@@ -39,127 +39,98 @@
 
 <body class="sub_page">
 
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="header_top">
-        <div class="container">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 123455678990
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : demo@gmail.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-          </div>
-        </div>
+  <?php include("./sections/header.php"); set_header($contact, $navbarItems); ?>
+
+  <!-- treatment section -->
+
+  <section class="treatment_section layout_padding">
+    <div class="side_img">
+      <img src="images/treatment-side-img.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Hospital <span>Treatment</span>
+        </h2>
       </div>
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="">
-            </a>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="treatment.html">Treatment</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="doctor.html">Doctors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="testimonial.html">Testimonial</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="quote_btn-container">
-                <a href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Login
-                  </span>
-                </a>
-                <a href="">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <span>
-                    Sign Up
-                  </span>
-                </a>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Nephrologist Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <span>Hospital</span>
-              </h2>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t2.png" alt="">
             </div>
-            <p>
-              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
-            </p>
-            <a href="">
-              Read More
-            </a>
+            <div class="detail-box">
+              <h4>
+                Eye Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Pediatrician Clinic
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/t4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Parental Care
+              </h4>
+              <p>
+                alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- end about section -->
-
+  <!-- end treatment section -->
 
   <!-- info section -->
   <section class="info_section ">
@@ -229,10 +200,10 @@
                 <a href="index.html">
                   Home
                 </a>
-                <a class="active" href="about.html">
+                <a href="about.html">
                   About
                 </a>
-                <a href="treatment.html">
+                <a href="treatment.html" class="active">
                   Treatment
                 </a>
                 <a href="doctor.html">
