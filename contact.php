@@ -127,6 +127,10 @@
     </header>
     <!-- end header section -->
   </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 498981bdb36011e87253c92cd4dbf7d43075e1db
 
   <!-- contact section -->
   <?php include("./sections/contact-section.php"); contactSection($contactSection) ?>
@@ -272,6 +276,10 @@
     </div>
   </section>
   <!-- end info_section -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> 498981bdb36011e87253c92cd4dbf7d43075e1db
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -299,5 +307,7 @@
   <!-- custom js -->
   <script src="js/custom.js"></script>
 
+
 </body>
+
 </html>
