@@ -623,11 +623,7 @@
   <!-- end client section -->
 
   <!-- contact section -->
-<<<<<<< HEAD
-  <?php include('./sections/contact-section.php'); contactSection($contactSection) ?>
-=======
   <?php include('./sections/contact-section.php'); contactSection($contactSection); ?>
->>>>>>> 498981bdb36011e87253c92cd4dbf7d43075e1db
   <!-- end contact section -->
 
   <!-- info section -->
