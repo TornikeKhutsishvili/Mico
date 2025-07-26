@@ -69,7 +69,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <img src="images/logo.png" alt="">
             </a>
 
@@ -82,22 +82,22 @@
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
+                    <a class="nav-link" href="about.php"> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="treatment.html">Treatment</a>
+                    <a class="nav-link" href="treatment.php">Treatment</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="doctor.html">Doctors</a>
+                    <a class="nav-link" href="doctor.php">Doctors</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                    <a class="nav-link" href="testimonial.php">Testimonial</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="contact.php">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -623,45 +623,7 @@
   <!-- end client section -->
 
   <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Get In Touch
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="img-box">
-            <img src="images/contact-img.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include('./sections/contact-section.php'); contactSection($contactSection); ?>
   <!-- end contact section -->
 
   <!-- info section -->
@@ -729,22 +691,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
+                <a class="active" href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="treatment.html">
+                <a href="treatment.php">
                   Treatment
                 </a>
-                <a href="doctor.html">
+                <a href="doctor.php">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="testimonial.php">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>

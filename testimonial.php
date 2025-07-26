@@ -69,7 +69,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
               <img src="images/logo.png" alt="">
             </a>
             </a>
@@ -82,22 +82,22 @@
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
                   <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html"> About</a>
+                    <a class="nav-link" href="about.php"> About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="treatment.html">Treatment</a>
+                    <a class="nav-link" href="treatment.php">Treatment</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="doctor.html">Doctors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                    <a class="nav-link" href="doctor.php">Doctors</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="testimonial.php">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -129,47 +129,89 @@
   </div>
 
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <h2>
-          Get In Touch
+          <span>Testimonial</span>
         </h2>
       </div>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Morijorch
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
               </div>
-              <div>
-                <input type="email" placeholder="Email" />
+              <p>
+                editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Rochak
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
               </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
+              <p>
+                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    Brad Johns
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
               </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
+              <p>
+                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="img-box">
-            <img src="images/contact-img.jpg" alt="">
-          </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <!-- end contact section -->
+  <!-- end client section -->
+
 
   <!-- info section -->
   <section class="info_section ">
@@ -236,22 +278,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a href="index.html">
+                <a href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="treatment.html">
+                <a href="treatment.php">
                   Treatment
                 </a>
-                <a href="doctor.html">
+                <a href="doctor.php">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a class="active" href="testimonial.php">
                   Testimonial
                 </a>
-                <a class="active" href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>
