@@ -1,7 +1,5 @@
 <?php
 
-include("./data.php");
-
 // footer function
 if (!function_exists('set_footer')) {
     function set_footer()
