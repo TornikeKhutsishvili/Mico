@@ -16,19 +16,24 @@ if (!function_exists('contactSection')) {
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form_container">
-                            <form action="">';
+                            <form action="get_in_touch.php" method="POST">';
 
-                            foreach ($contactSection['form'] as $input) {
-                                $class = isset($input['class']) ? 'class="' . htmlspecialchars($input['class']) . '"' : '';
-                                echo '
+                                $names = ['full_name', 'email', 'phone', 'message'];
+                                $i = 0;
+
+                                foreach ($contactSection['form'] as $input) {
+                                    $class = isset($input['class']) ? 'class="' . htmlspecialchars($input['class']) . '"' : '';
+                                    $nameAttr = isset($names[$i]) ? 'name="' . $names[$i] . '"' : '';
+                                    echo '
                                         <div>
-                                            <input type="' . htmlspecialchars($input['type']) . '" placeholder="' . htmlspecialchars($input['placeholder']) . '" ' . $class . ' />
+                                            <input type="' . htmlspecialchars($input['type']) . '" placeholder="' . htmlspecialchars($input['placeholder']) . '" ' . $class . ' ' . $nameAttr . ' />
                                         </div>';
-                            }
+                                    $i++;
+                                }
 
                                 echo '
                                 <div class="btn_box">
-                                    <button>' . htmlspecialchars($contactSection['button_text']) . '</button>
+                                    <button type="submit">' . htmlspecialchars($contactSection['button_text']) . '</button>
                                 </div>
                             </form>
                         </div>
