@@ -16,7 +16,7 @@ if (!function_exists('contactSection')) {
                 <div class="row">
                     <div class="col-md-7">
                         <div class="form_container">
-                            <form action="get_in_touch.php" method="POST">';
+                            <form action="./sections/get_in_touch.php" method="POST">';
 
                                 $names = ['full_name', 'email', 'phone', 'message'];
                                 $i = 0;
