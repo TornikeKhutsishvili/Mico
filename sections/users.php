@@ -5,11 +5,8 @@ if (!isset($_SESSION['users'])) {
     $_SESSION['users'] = [];
 }
 
-function addUser($username, $password) {
-    $_SESSION['users'][] = [
-        'username' => $username,
-        'password' => $password
-    ];
+function addUser($userData) {
+    $_SESSION['users'][] = $userData;
 }
 
 function findUser($username, $password) {
@@ -29,7 +26,6 @@ function currentUser() {
     return $_SESSION['current_user'] ?? null;
 }
 
-// სწორი ფუნქცია:
 function displayUserPanel() {
     $currentUser = currentUser();
     $users = $_SESSION['users'];
