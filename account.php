@@ -54,7 +54,7 @@ set_header($contact, $navbarItems);
 
   ?>
 
-<?php displayUserPanel(); ?>   
+<?php displayUserPanel() ; ?>   
     <!-- book section -->
 
   

@@ -29,7 +29,7 @@ function currentUser() {
     return $_SESSION['current_user'] ?? null;
 }
 
-// ახალი ფუნქცია რაც გინდა:
+// სწორი ფუნქცია:
 function displayUserPanel() {
     $currentUser = currentUser();
     $users = $_SESSION['users'];
@@ -39,7 +39,16 @@ function displayUserPanel() {
     echo "<h3>All Registered Users:</h3>";
     echo "<ul>";
     foreach ($users as $user) {
-        echo "<li>" . htmlspecialchars($user['username']) . "</li>";
+        $fullName = '';
+        if (isset($user['first_name']) && isset($user['last_name'])) {
+            $fullName = $user['first_name'] . ' ' . $user['last_name'];
+        } else {
+            $fullName = $user['username'];
+        }
+
+        $ageText = isset($user['age']) ? ' - Age: ' . htmlspecialchars($user['age']) : '';
+
+        echo "<li>" . htmlspecialchars($fullName) . " (" . htmlspecialchars($user['username']) . ")$ageText</li>";
     }
     echo "</ul>";
 

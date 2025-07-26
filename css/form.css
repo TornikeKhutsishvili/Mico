@@ -19,9 +19,15 @@
     border-radius: 10px;
     background-color: #00ffa2;
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+}
 .big-form input[type="text"],
-.big-form input[type="password"] {
+.big-form input[type="password"],
+.big-form input[type="email"],
+.big-form input[type="number"]
+{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
