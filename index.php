@@ -40,11 +40,12 @@
 <body>
 
 
-<?php     include('./sections/hero-area-section.php');
-    hero($contact, $navbarItems, $sliders);
-?>
+<?php     
 
-  <!-- book section -->
+include('./sections/hero-area-section.php');
+    hero($contact, $navbarItems, $sliders);
+   
+   ?>
 
   <section class="book_section layout_padding">
     <div class="container">
@@ -614,6 +615,8 @@
     </div>
   </footer>
   <!-- footer section -->
+
+
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>

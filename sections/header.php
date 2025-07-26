@@ -51,11 +51,11 @@ if (!function_exists('Auth')) {
     function Auth()
     {
         echo '
-        <a href="#">
+        <a href="./login.php">
             <i class="fa fa-user" aria-hidden="true"></i>
             <span>Login</span>
         </a>
-        <a href="#">
+        <a href="./signup.php">
             <i class="fa fa-user" aria-hidden="true"></i>
             <span>Sign Up</span>
         </a>
