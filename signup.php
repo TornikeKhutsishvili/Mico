@@ -39,49 +39,55 @@
 </head>
 
 <body class="sub_page">
+
   <!-- header -->
-  <?php 
-include("./sections/users.php");
+  <?php
+
+  include("./sections/users.php");
   include ('./sections/forms.php');
-  
-$error = '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $firstName = trim($_POST['first_name']);
-    $lastName = trim($_POST['last_name']);
-    $email = trim($_POST['email']);
-    $age = (int)$_POST['age'];
-    $username = trim($_POST['username']);
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['confirm_password'];
+  $error = '';
 
-    if ($password !== $confirmPassword) {
-        $error = "Passwords do not match!";
-    } 
-    else {
-        addUser([
-            'first_name' => $firstName,
-            'last_name' => $lastName,
-            'email' => $email,
-            'age' => $age,
-            'username' => $username,
-            'password' => $password  
-        ]);
-    
-        $_SESSION['current_user'] = $username;
-        header('Location: account.php');
-        exit();
-    };
-      
-};
-include("./sections/header.php");
-set_header($contact, $navbarItems);
-displaySignupForm();
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $firstName = trim($_POST['first_name']);
+      $lastName = trim($_POST['last_name']);
+      $email = trim($_POST['email']);
+      $age = (int)$_POST['age'];
+      $username = trim($_POST['username']);
+      $password = $_POST['password'];
+      $confirmPassword = $_POST['confirm_password'];
+
+      if ($password !== $confirmPassword) {
+          $error = "Passwords do not match!";
+      }
+      else {
+          addUser([
+              'first_name' => $firstName,
+              'last_name' => $lastName,
+              'email' => $email,
+              'age' => $age,
+              'username' => $username,
+              'password' => $password
+          ]);
+
+          $_SESSION['current_user'] = $username;
+          header('Location: account.php');
+          exit();
+      };
+
+  };
+  include("./sections/header.php");
+  set_header($contact, $navbarItems);
+  displaySignupForm();
 
   ?>
 
 
-  
+  <!-- footer section -->
+  <?php include('./sections/footer.php'); set_footer(); ?>
+
+
+
   <!-- jQery -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
