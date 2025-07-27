@@ -38,36 +38,40 @@
 </head>
 
 <body class="sub_page">
+
   <!-- header -->
-  <?php 
-include("./sections/users.php");
-include("./sections/forms.php");
+  <?php
 
-$error = '';
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+  include("./sections/users.php");
+  include("./sections/forms.php");
 
-    $user = findUser($username, $password);
+  $error = '';
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $username = trim($_POST['username']);
+      $password = trim($_POST['password']);
 
-    if ($user) {
-        $_SESSION['current_user'] = $username;
-        header('Location: account.php');
-        exit();
-    } else {
-        $error = "Invalid username or password.";
-    }
-}
+      $user = findUser($username, $password);
 
-include("./sections/header.php");
-set_header($contact, $navbarItems);
-displayLoginForm($error);
+      if ($user) {
+          $_SESSION['current_user'] = $username;
+          header('Location: account.php');
+          exit();
+      } else {
+          $error = "Invalid username or password.";
+      }
+  }
 
-?>
+  include("./sections/header.php");
+  set_header($contact, $navbarItems);
+  displayLoginForm($error);
+
+  ?>
 
 
+  <!-- footer section -->
+  <?php include('./sections/footer.php'); set_footer(); ?>
 
-  
+
   <!-- jQery -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->

@@ -39,25 +39,31 @@
 </head>
 
 <body class="sub_page">
+
   <!-- header -->
-  <?php 
-include("./sections/users.php");
+  <?php
+
+  include("./sections/users.php");
 
 
-    if (!isLoggedIn()) {
-    header('Location: login.php');
-    exit();
-   };
+  if (!isLoggedIn()) {
+  header('Location: login.php');
+  exit();
+  };
 
-include("./sections/header.php");
-set_header($contact, $navbarItems);
+  include("./sections/header.php");
+  set_header($contact, $navbarItems);
 
   ?>
 
-<?php displayUserPanel() ; ?>   
-    <!-- book section -->
 
-  
+  <?php displayUserPanel() ; ?>
+
+
+  <!-- footer section -->
+  <?php include('./sections/footer.php'); set_footer(); ?>
+
+
   <!-- jQery -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->

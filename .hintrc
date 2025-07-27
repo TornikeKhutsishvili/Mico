@@ -14,7 +14,10 @@
       {
         "ignore": [
           "-webkit-text-size-adjust",
-          "-ms-filter"
+          "-ms-filter",
+          "widows",
+          "orphans",
+          "-webkit-overflow-scrolling"
         ]
       }
     ]
