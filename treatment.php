@@ -39,8 +39,10 @@
 
 <body class="sub_page">
 
+
   <?php include("./sections/header.php"); set_header($contact, $navbarItems); ?>
 
+  
   <!-- treatment section -->
 
   <section class="treatment_section layout_padding">
@@ -197,22 +199,22 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a href="index.html">
+                <a href="index.php">
                   Home
                 </a>
-                <a href="about.html">
+                <a href="about.php">
                   About
                 </a>
-                <a href="treatment.html" class="active">
+                <a href="treatment.php" class="active">
                   Treatment
                 </a>
-                <a href="doctor.html">
+                <a href="doctor.php">
                   Doctors
                 </a>
-                <a href="testimonial.html">
+                <a href="testimonial.php">
                   Testimonial
                 </a>
-                <a href="contact.html">
+                <a href="contact.php">
                   Contact us
                 </a>
               </div>
@@ -276,15 +278,7 @@
 
 
   <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </footer>
-  <!-- footer section -->
+  <?php include('./sections/footer.php'); set_footer(); ?>
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
