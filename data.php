@@ -131,3 +131,44 @@ $contactSection = [
 
 ];
 
+
+
+
+// info section
+$currentPage = basename($_SERVER['PHP_SELF']);
+
+$infoData = [
+
+    'contact' => [
+        'address' => 'Location',
+        'phone' => '+01 1234567890',
+        'email' => 'demo@gmail.com'
+    ],
+
+    'socials' => [
+        'facebook' => 'https://facebook.com',
+        'twitter' => 'https://twitter.com',
+        'linkedin' => 'https://linkedin.com',
+        'instagram' => 'https://instagram.com'
+    ],
+
+    'links' => [
+        ['name' => 'Home', 'url' => 'index.php', 'active' => ($currentPage == 'index.php')],
+        ['name' => 'About', 'url' => 'about.php', 'active' => ($currentPage == 'about.php')],
+        ['name' => 'Treatment', 'url' => 'treatment.php', 'active' => ($currentPage == 'treatment.php')],
+        ['name' => 'Doctors', 'url' => 'doctor.php', 'active' => ($currentPage == 'doctor.php')],
+        ['name' => 'Testimonial', 'url' => 'testimonial.php', 'active' => ($currentPage == 'testimonial.php')],
+        ['name' => 'Contact us', 'url' => 'contact.php', 'active' => ($currentPage == 'contact.php')],
+    ],
+
+    'latest_posts' => [
+        ['image' => 'images/post1.jpg', 'text' => 'Normal distribution'],
+        ['image' => 'images/post2.jpg', 'text' => 'Normal distribution'],
+    ],
+
+    'news' => [
+        ['image' => 'images/post3.jpg', 'text' => 'Normal distribution'],
+        ['image' => 'images/post4.png', 'text' => 'Normal distribution'],
+    ]
+
+];
