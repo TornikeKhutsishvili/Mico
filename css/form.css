@@ -9,6 +9,7 @@
     margin: 0 auto;
     padding: 30px;
     border-radius: 10px;
+    min-height: calc(100vh - 238px);
 }
 .big-form {
     width: 100%;

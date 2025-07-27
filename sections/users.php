@@ -30,6 +30,7 @@ function displayUserPanel() {
     $currentUser = currentUser();
     $users = $_SESSION['users'];
 
+    echo "<div class='container-form'>";
     echo "<h1>Welcome, " . htmlspecialchars($currentUser) . "!</h1>";
 
     echo "<h3>All Registered Users:</h3>";
@@ -47,6 +48,7 @@ function displayUserPanel() {
         echo "<li>" . htmlspecialchars($fullName) . " (" . htmlspecialchars($user['username']) . ")$ageText</li>";
     }
     echo "</ul>";
+    echo "</div>";
 
     echo "<script>";
     echo "let users = " . json_encode($users) . ";";
