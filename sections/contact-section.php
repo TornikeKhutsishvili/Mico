@@ -5,6 +5,7 @@ include("./data.php");
 
 // contact function
 if (!function_exists('contactSection')) {
+
     function contactSection($contactSection)
     {
         echo '
@@ -47,4 +48,5 @@ if (!function_exists('contactSection')) {
             </div>
         </section>';
     }
+
 }

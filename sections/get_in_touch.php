@@ -1,5 +1,6 @@
 <?php
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['full_name'] ?? '';
     $email = $_POST['email'] ?? '';
@@ -9,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "<h2>Your for is submetted, $name!</h2>";
     echo "<p>Your message is: $message</p>";
 }
+
 
 echo '<div>';
     echo '<a href="../index.php">Back to Home</a>';
