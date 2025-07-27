@@ -64,6 +64,8 @@
   <?php include('./sections/footer.php'); set_footer(); ?>
 
 
+  <!-- button js -->
+  <script src="js/button.js"></script>
   <!-- jQery -->
   <script src="./js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
