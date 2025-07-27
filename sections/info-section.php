@@ -9,17 +9,17 @@ if (!function_exists('info')) {
     function info($data)
     {
         echo '
-        <section class="info_section ">
+        <section class="info_section">
             <div class="container">
                 <div class="info_top">
                     <div class="info_logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
+                        <a href="../index.php">
+                            <img src="images/logo.png" alt="Info logo">
                         </a>
                     </div>
                     <div class="info_form">
-                        <form action="">
-                            <input type="email" placeholder="Your email">
+                        <form action="./sections/subscribe.php" method="POST">
+                            <input type="email" name="email" placeholder="Your email" required>
                             <button>Subscribe</button>
                         </form>
                     </div>
@@ -29,7 +29,7 @@ if (!function_exists('info')) {
                         <div class="col-md-6 col-lg-3">
                             <h5>Address</h5>
                             <div class="info_contact">
-                                <a href="#">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Tbilisi" target="_blank">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>' . htmlspecialchars($data['contact']['address']) . '</span>
                                 </a>
@@ -43,57 +43,57 @@ if (!function_exists('info')) {
                                 </a>
                             </div>
                             <div class="social_box">';
-
-        foreach ($data['socials'] as $platform => $link) {
-            echo '<a href="' . htmlspecialchars($link) . '">
-                    <i class="fa fa-' . htmlspecialchars($platform) . '" aria-hidden="true"></i>
-                </a>';
-        }
-
-        echo        '</div>
+                            foreach ($data['socials'] as $platform => $link) {
+                                echo '
+                                <a href="' . htmlspecialchars($link) . '" target="_blank">
+                                    <i class="fa fa-' . htmlspecialchars($platform) . '" aria-hidden="true"></i>
+                                </a>';
+                            }
+                            echo '
+                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="info_links">
                                 <h5>Useful link</h5>
                                 <div class="info_links_menu">';
-
-        foreach ($data['links'] as $link) {
-            $class = isset($link['active']) && $link['active'] ? ' class="active"' : '';
-            echo '<a href="' . htmlspecialchars($link['url']) . '"' . $class . '>' . htmlspecialchars($link['name']) . '</a>';
-        }
-
-        echo           '</div>
+                                foreach ($data['links'] as $link) {
+                                    $class = isset($link['active']) && $link['active'] ? ' class="active"' : '';
+                                    echo '
+                                    <a href="' . htmlspecialchars($link['url']) . '"' . $class . '>' . htmlspecialchars($link['name']) . '</a>';
+                                }
+                                echo '
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="info_post">
                                 <h5>LATEST POSTS</h5>';
-
-        foreach ($data['latest_posts'] as $post) {
-            echo '<div class="post_box">
-                    <div class="img-box">
-                        <img src="' . htmlspecialchars($post['image']) . '" alt="">
-                    </div>
-                    <p>' . htmlspecialchars($post['text']) . '</p>
-                </div>';
-        }
-
-        echo        '</div>
+                                foreach ($data['latest_posts'] as $post) {
+                                    echo '
+                                    <div class="post_box">
+                                        <div class="img-box">
+                                            <img src="' . htmlspecialchars($post['image']) . '" alt="Post logo">
+                                        </div>
+                                        <p>' . htmlspecialchars($post['text']) . '</p>
+                                    </div>';
+                                }
+                                echo '
+                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="info_post">
                                 <h5>News</h5>';
-
-        foreach ($data['news'] as $post) {
-            echo '<div class="post_box">
-                    <div class="img-box">
-                        <img src="' . htmlspecialchars($post['image']) . '" alt="">
-                    </div>
-                    <p>' . htmlspecialchars($post['text']) . '</p>
-                </div>';
-        }
-
-        echo        '</div>
+                                foreach ($data['news'] as $post) {
+                                    echo '
+                                    <div class="post_box">
+                                        <div class="img-box">
+                                            <img src="' . htmlspecialchars($post['image']) . '" alt="News logo">
+                                        </div>
+                                        <p>' . htmlspecialchars($post['text']) . '</p>
+                                    </div>';
+                                }
+                            echo '
+                            </div>
                         </div>
                     </div>
                 </div>

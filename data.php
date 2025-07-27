@@ -135,6 +135,8 @@ $contactSection = [
 
 
 // info section
+$currentPage = basename($_SERVER['PHP_SELF']);
+
 $infoData = [
 
     'contact' => [
@@ -144,19 +146,19 @@ $infoData = [
     ],
 
     'socials' => [
-        'facebook' => '#',
-        'twitter' => '#',
-        'linkedin' => '#',
-        'instagram' => '#'
+        'facebook' => 'https://facebook.com',
+        'twitter' => 'https://twitter.com',
+        'linkedin' => 'https://linkedin.com',
+        'instagram' => 'https://instagram.com'
     ],
 
     'links' => [
-        ['name' => 'Home', 'url' => 'index.php'],
-        ['name' => 'About', 'url' => 'about.php'],
-        ['name' => 'Treatment', 'url' => 'treatment.php', 'active' => true],
-        ['name' => 'Doctors', 'url' => 'doctor.php'],
-        ['name' => 'Testimonial', 'url' => 'testimonial.php'],
-        ['name' => 'Contact us', 'url' => 'contact.php'],
+        ['name' => 'Home', 'url' => 'index.php', 'active' => ($currentPage == 'index.php')],
+        ['name' => 'About', 'url' => 'about.php', 'active' => ($currentPage == 'about.php')],
+        ['name' => 'Treatment', 'url' => 'treatment.php', 'active' => ($currentPage == 'treatment.php')],
+        ['name' => 'Doctors', 'url' => 'doctor.php', 'active' => ($currentPage == 'doctor.php')],
+        ['name' => 'Testimonial', 'url' => 'testimonial.php', 'active' => ($currentPage == 'testimonial.php')],
+        ['name' => 'Contact us', 'url' => 'contact.php', 'active' => ($currentPage == 'contact.php')],
     ],
 
     'latest_posts' => [
