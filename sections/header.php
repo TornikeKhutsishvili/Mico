@@ -59,10 +59,15 @@ if (!function_exists('Auth')) {
             <i class="fa fa-user" aria-hidden="true"></i>
             <span>Sign Up</span>
         </a>
-        <form class="form-inline">
-            <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
+
+        <!-- Search toggle button -->
+        <button class="btn my-2 my-sm-0 nav_search-btn" type="button" id="toggleSearch">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+
+        <!-- Hidden search input -->
+        <form action="" method="GET" id="searchForm" class="search-form" style="display: none; margin-left: 10px;">
+            <input type="text" name="q" placeholder="Search..." class="form-control" />
         </form>';
     }
 }
