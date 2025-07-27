@@ -131,3 +131,42 @@ $contactSection = [
 
 ];
 
+
+
+
+// info section
+$infoData = [
+
+    'contact' => [
+        'address' => 'Location',
+        'phone' => '+01 1234567890',
+        'email' => 'demo@gmail.com'
+    ],
+
+    'socials' => [
+        'facebook' => '#',
+        'twitter' => '#',
+        'linkedin' => '#',
+        'instagram' => '#'
+    ],
+
+    'links' => [
+        ['name' => 'Home', 'url' => 'index.php'],
+        ['name' => 'About', 'url' => 'about.php'],
+        ['name' => 'Treatment', 'url' => 'treatment.php', 'active' => true],
+        ['name' => 'Doctors', 'url' => 'doctor.php'],
+        ['name' => 'Testimonial', 'url' => 'testimonial.php'],
+        ['name' => 'Contact us', 'url' => 'contact.php'],
+    ],
+
+    'latest_posts' => [
+        ['image' => 'images/post1.jpg', 'text' => 'Normal distribution'],
+        ['image' => 'images/post2.jpg', 'text' => 'Normal distribution'],
+    ],
+
+    'news' => [
+        ['image' => 'images/post3.jpg', 'text' => 'Normal distribution'],
+        ['image' => 'images/post4.png', 'text' => 'Normal distribution'],
+    ]
+
+];
