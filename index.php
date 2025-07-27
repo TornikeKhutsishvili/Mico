@@ -40,10 +40,8 @@
 <body>
 
 
-
-<?php     include('./sections/hero-area-section.php');
-    hero($contact, $navbarItems, $sliders);
-?>
+<!-- header section -->  
+<?php include('./sections/hero-area-section.php'); hero($contact, $navbarItems, $sliders); ?>
 
 
   <!-- book section -->
@@ -570,6 +568,8 @@
 
   <!-- footer section -->
   <?php include('./sections/footer.php'); set_footer(); ?>
+
+
 
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
