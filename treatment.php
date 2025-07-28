@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
+  <!-- Meta Tags for Responsive and Compatibility -->
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,46 +14,70 @@
 
   <title>Mico</title>
 
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- nice select -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-  <!-- datepicker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- jQuery Nice Select CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4="
+    crossorigin="anonymous"
+  />
 
+  <!-- Bootstrap Datepicker CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body class="sub_page">
 
-  <!-- header -->
-  <?php include("./sections/header.php"); set_header($contact, $navbarItems); ?>
+  <!-- Header Section -->
+  <?php 
+    include("./sections/header.php"); 
+    set_header($contact, $navbarItems); 
+  ?>
 
-  <!-- treatment section -->
-  <?php include("./sections/treatment-section.php"); treatment_section($hospital_treatments_cards) ?>
+  <!-- Treatment Section -->
+  <?php 
+    include("./sections/treatment-section.php"); 
+    treatment_section($hospital_treatments_cards); 
+  ?>
 
-  <!-- info section -->
-  <?php include("./sections/info-section.php"); info($infoData); ?>
+  <!-- Info Section -->
+  <?php 
+    include("./sections/info-section.php"); 
+    info($infoData); 
+  ?>
 
-  <!-- footer section -->
-  <?php include('./sections/footer.php'); set_footer(); ?>
+  <!-- Footer Section -->
+  <?php 
+    include("./sections/footer.php"); 
+    set_footer(); 
+  ?>
 
-
-
-  <!-- button js -->
+  <!-- Scripts -->
   <script src="js/button.js"></script>
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
