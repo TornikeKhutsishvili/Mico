@@ -1,0 +1,11 @@
+.info_form_flex {
+    display: flex;
+    flex-direction: column !important;
+    position: relative;
+}
+
+.info_form_flex button {
+    position: absolute;
+    top: -5px;
+    right: -70px;
+}
