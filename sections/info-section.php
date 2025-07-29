@@ -17,7 +17,7 @@ if (!function_exists('info')) {
                             <img src="images/logo.png" alt="Info logo">
                         </a>
                     </div>
-                    <div class="info_form">
+                    <div class="info_form info_form_flex">
                         <form action="./sections/subscribe.php" method="POST">
                             <input type="email" name="email" placeholder="Your email" required>
                             <button>Subscribe</button>

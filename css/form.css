@@ -11,6 +11,7 @@
     border-radius: 10px;
     min-height: calc(100vh - 238px);
 }
+
 .big-form {
     width: 100%;
     max-width: 600px;
@@ -20,10 +21,12 @@
     border-radius: 10px;
     background-color: #00ffa2;
 }
-form {
+
+.big-form {
     display: flex;
     flex-direction: column;
 }
+
 .big-form input[type="text"],
 .big-form input[type="password"],
 .big-form input[type="email"],
