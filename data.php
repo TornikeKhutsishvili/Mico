@@ -182,3 +182,26 @@ $infoData = [
 
 
 
+// book section
+$appointmentSection = [
+
+    'title' => 'BOOK',
+    'highlight' => 'APPOINTMENT',
+
+    'doctors' => [
+        'Dr. John Smith',
+        'Dr. Jane Doe',
+        'Dr. Alex Johnson'
+    ],
+
+    'departments' => [
+        'Cardiology',
+        'Neurology',
+        'Pediatrics'
+    ]
+
+];
+
+
+
+
