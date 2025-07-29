@@ -96,7 +96,7 @@ $sliders = [
         'subtitle' => 'Hospital',
         'text' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
         'image' => 'images/slider-img.jpg',
-        'link' => '#',
+        'link' => 'contact.php',
     ],
 
     [
@@ -104,7 +104,7 @@ $sliders = [
         'subtitle' => 'Hospital',
         'text' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
         'image' => 'images/slider-img.jpg',
-        'link' => '#',
+        'link' => 'contact.php',
     ],
 
     [
@@ -112,7 +112,7 @@ $sliders = [
         'subtitle' => 'Hospital',
         'text' => 'when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to',
         'image' => 'images/slider-img.jpg',
-        'link' => '#',
+        'link' => 'contact.php',
     ]
 
 ];
@@ -201,6 +201,58 @@ $appointmentSection = [
     ]
 
 ];
+
+
+
+
+// team section
+$teamSection = [
+
+    'title' => 'Our',
+    'highlight' => 'Doctors',
+
+    'team_members' => [
+
+        [
+            'name' => 'Hennry',
+            'degree' => 'MBBS',
+            'image' => 'images/team1.jpg',
+            'socials' => [
+                'facebook' => 'https://facebook.com',
+                'twitter' => 'https://twitter.com',
+                'linkedin' => 'https://linkedin.com',
+                'instagram' => 'https://instagram.com'
+            ]
+        ],
+
+        [
+            'name' => 'Jenni',
+            'degree' => 'MBBS',
+            'image' => 'images/team2.jpg',
+            'socials' => [
+                'facebook' => 'https://facebook.com',
+                'twitter' => 'https://twitter.com',
+                'linkedin' => 'https://linkedin.com',
+                'instagram' => 'https://instagram.com'
+            ]
+        ],
+
+        [
+            'name' => 'Morco',
+            'degree' => 'MBBS',
+            'image' => 'images/team3.jpg',
+            'socials' => [
+                'facebook' => 'https://facebook.com',
+                'twitter' => 'https://twitter.com',
+                'linkedin' => 'https://linkedin.com',
+                'instagram' => 'https://instagram.com'
+            ]
+        ]
+
+    ]
+
+];
+
 
 
 
