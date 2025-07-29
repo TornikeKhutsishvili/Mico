@@ -12,7 +12,7 @@ if (!function_exists('appointmentSection')) {
           <div class="container">
             <div class="row">
               <div class="col">
-                <form method="POST">
+                <form action="sections/book-section-appoinment.php" method="POST">
                   <h4>' . htmlspecialchars($section['title']) . ' <span>' . htmlspecialchars($section['highlight']) . '</span></h4>
                   <div class="form-row ">
                     <div class="form-group col-lg-4">
