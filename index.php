@@ -14,6 +14,7 @@
 
   <title>Mico</title>
 
+  <link rel="stylesheet" href="css/treatment_a.css">
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -335,6 +336,8 @@
 
 
 
+  <!-- scripts -->
+  <script src="js/read-more-less.js"></script>
   <!-- button js -->
   <script src="js/button.js"></script>
   <!-- jQery -->

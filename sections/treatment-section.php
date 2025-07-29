@@ -27,8 +27,8 @@ if (!function_exists('treatment_section')) {
                             echo '</div>';
                             echo '<div class="detail-box">';
                                 echo '<h4>' . htmlspecialchars($card['title']) . '</h4>';
-                                echo '<p>' . htmlspecialchars($card['description']) . '</p>';
-                                echo '<a href="#">' . htmlspecialchars($card['button']) . '</a>';
+                                echo '<p class="card-description">' . htmlspecialchars($card['description']) . '</p>';
+                                echo '<a href="javascript:void(0);" class="toggle-btn">' . htmlspecialchars($card['button']) . '</a>';
                             echo '</div>';
                         echo '</div>';
                     echo '</div>';
@@ -38,4 +38,6 @@ if (!function_exists('treatment_section')) {
         echo '</section>';
     }
 }
+
+
 ?>

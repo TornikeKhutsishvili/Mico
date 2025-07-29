@@ -39,6 +39,7 @@ $navbarItems = [
 
 
 
+
 // contact
 $contact = [
 
@@ -47,6 +48,9 @@ $contact = [
     'address' => 'Location'
 
 ];
+
+
+
 
 // hospital treatments cards
 $hospital_treatments_cards = [
@@ -83,6 +87,7 @@ $hospital_treatments_cards = [
 
 
 
+
 // slider
 $sliders = [
 
@@ -111,6 +116,7 @@ $sliders = [
     ]
 
 ];
+
 
 
 
@@ -172,3 +178,7 @@ $infoData = [
     ]
 
 ];
+
+
+
+
