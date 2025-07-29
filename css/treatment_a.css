@@ -1,0 +1,20 @@
+.card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  /* Line clamp for truncation */
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+
+  transition: all 0.3s ease;
+}
+
+/* When expanded, show full content */
+.card-description.expanded {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  display: block; /* Removes line clamping entirely */
+  max-height: none;
+  overflow: visible;
+}
