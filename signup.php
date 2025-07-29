@@ -1,109 +1,48 @@
-<!DOCTYPE html>
-<html>
+<?php include('./sections/document-start.php'); ?>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <!-- header -->
+    <?php
 
-  <title>Mico</title>
+    include("./sections/users.php");
+    include ('./sections/forms.php');
 
-<link rel="stylesheet" href="./css/form.css">
+    $error = '';
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $firstName = trim($_POST['first_name']);
+        $lastName = trim($_POST['last_name']);
+        $email = trim($_POST['email']);
+        $age = (int)$_POST['age'];
+        $username = trim($_POST['username']);
+        $password = $_POST['password'];
+        $confirmPassword = $_POST['confirm_password'];
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        if ($password !== $confirmPassword) {
+            $error = "Passwords do not match!";
+        }
+        else {
+            addUser([
+                'first_name' => $firstName,
+                'last_name' => $lastName,
+                'email' => $email,
+                'age' => $age,
+                'username' => $username,
+                'password' => $password
+            ]);
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+            $_SESSION['current_user'] = $username;
+            header('Location: account.php');
+            exit();
+        };
 
-  <!-- font awesome style -->
-  <link href="./css/font-awesome.min.css" rel="stylesheet" />
-  <!-- nice select -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
-  <!-- datepicker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
-  <!-- Custom styles for this template -->
-  <link href="./css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="./css/responsive.css" rel="stylesheet" />
+    };
+    include("./sections/header.php");
+    set_header($contact, $navbarItems);
+    displaySignupForm();
 
-</head>
+    ?>
 
-<body class="sub_page">
+    <!-- footer section -->
+    <?php include('./sections/footer.php'); set_footer(); ?>
 
-  <!-- header -->
-  <?php
-
-  include("./sections/users.php");
-  include ('./sections/forms.php');
-
-  $error = '';
-
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      $firstName = trim($_POST['first_name']);
-      $lastName = trim($_POST['last_name']);
-      $email = trim($_POST['email']);
-      $age = (int)$_POST['age'];
-      $username = trim($_POST['username']);
-      $password = $_POST['password'];
-      $confirmPassword = $_POST['confirm_password'];
-
-      if ($password !== $confirmPassword) {
-          $error = "Passwords do not match!";
-      }
-      else {
-          addUser([
-              'first_name' => $firstName,
-              'last_name' => $lastName,
-              'email' => $email,
-              'age' => $age,
-              'username' => $username,
-              'password' => $password
-          ]);
-
-          $_SESSION['current_user'] = $username;
-          header('Location: account.php');
-          exit();
-      };
-
-  };
-  include("./sections/header.php");
-  set_header($contact, $navbarItems);
-  displaySignupForm();
-
-  ?>
-
-
-  <!-- footer section -->
-  <?php include('./sections/footer.php'); set_footer(); ?>
-
-
-
-  <!-- button js -->
-  <script src="js/button.js"></script>
-  <!-- jQery -->
-  <script src="./js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="./js/bootstrap.js"></script>
-  <!-- nice select -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- datepicker -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-  <!-- custom js -->
-  <script src="./js/custom.js"></script>
-
-
-</body>
-
-</html>
+<?php include('./sections/document-end.php'); ?>
