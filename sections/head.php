@@ -11,6 +11,7 @@ function set_head() {
         <title>Mico</title>
 
         <link rel="stylesheet" href="css/info-section-form.css">
+        <link rel="stylesheet" href="css/slider-modal.css">
         <link rel="stylesheet" href="./css/form.css">
         <link rel="stylesheet" href="css/treatment_a.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
