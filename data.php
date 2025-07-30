@@ -287,3 +287,14 @@ $testimonialSection = [
 
 
 
+// about section
+$about = [
+
+    'image' => 'images/about-img.jpg',
+    'title' => 'About',
+    'highlight' => 'Hospital',
+    'description' => "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
+    'button_text' => 'Read More',
+    'button_link' => '#'
+
+];
