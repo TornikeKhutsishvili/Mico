@@ -1,6 +1,7 @@
 <?php
 
 echo '
+    <script src="js/slider-modal.js"></script>
     <script src="js/button.js"></script>
     <script src="js/read-more-less.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>

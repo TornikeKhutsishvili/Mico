@@ -1,7 +1,7 @@
 <?php
 
 include("./data.php");
-
+include("slider-modal.php");
 
 // slider function
 if (!function_exists('slider')) {
@@ -24,7 +24,12 @@ if (!function_exists('slider')) {
                     <div class="col-md-6">
                       <div class="detail-box">
                         <div class="play_btn">
-                          <button>
+                          <button class="open-modal-btn"
+                            data-title="' . htmlspecialchars($slide['title']) . '"
+                            data-subtitle="' . htmlspecialchars($slide['subtitle']) . '"
+                            data-text="' . htmlspecialchars($slide['text']) . '"
+                            data-image="' . htmlspecialchars($slide['image']) . '"
+                          >
                             <i class="fa fa-play" aria-hidden="true"></i>
                           </button>
                         </div>
