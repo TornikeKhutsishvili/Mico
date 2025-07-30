@@ -22,8 +22,8 @@ if (!function_exists('aboutSection')) {
                   <div class="heading_container">
                     <h2>' . htmlspecialchars($about['title']) . ' <span>' . htmlspecialchars($about['highlight']) . '</span></h2>
                   </div>
-                  <p>' . htmlspecialchars($about['description']) . '</p>
-                  <a href="' . htmlspecialchars($about['button_link']) . '">' . htmlspecialchars($about['button_text']) . '</a>
+                  <p class="card-description">' . htmlspecialchars($about['description']) . '</p>
+                  <a href="' . htmlspecialchars($about['button_link']) . '" class="toggle-btn">' . htmlspecialchars($about['button_text']) . '</a>
                 </div>
               </div>
             </div>
