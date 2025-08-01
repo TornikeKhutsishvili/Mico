@@ -10,7 +10,7 @@ include('./sections/team-section.php'); teamSection($teamSection);
 include("./sections/client-section.php"); testimonialSection($testimonialSection);
 include('./sections/contact-section.php'); contactSection($contactSection);
 include('./sections/info-section.php'); info($infoData);
-include('./sections/footer.php'); set_footer();
+include('./sections/footer.php'); set_footer($footer);
 
 include('./sections/document-end.php');
 

@@ -2,6 +2,7 @@
 
 
 
+
 // navbar item
 $navbarItems = [
 
@@ -39,7 +40,6 @@ $navbarItems = [
 
 
 
-
 // contact
 $contact = [
 
@@ -48,7 +48,6 @@ $contact = [
     'address' => 'Location'
 
 ];
-
 
 
 
@@ -87,7 +86,6 @@ $hospital_treatments_cards = [
 
 
 
-
 // slider
 $sliders = [
 
@@ -119,7 +117,6 @@ $sliders = [
 
 
 
-
 // contact section
 $contactSection = [
 
@@ -136,7 +133,6 @@ $contactSection = [
     'button_text' => 'SEND'
 
 ];
-
 
 
 
@@ -181,7 +177,6 @@ $infoData = [
 
 
 
-
 // book section
 $appointmentSection = [
 
@@ -201,7 +196,6 @@ $appointmentSection = [
     ]
 
 ];
-
 
 
 
@@ -255,8 +249,6 @@ $teamSection = [
 
 
 
-
-
 // client section
 $testimonialSection = [
 
@@ -284,9 +276,6 @@ $testimonialSection = [
 
 
 
-
-
-
 // about section
 $about = [
 
@@ -296,5 +285,16 @@ $about = [
     'description' => "has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
     'button_text' => 'Read More',
     'button_link' => '#'
+
+];
+
+
+
+// footer
+$footer = [
+
+    'text' => 'All Rights Reserved By',
+    'link_url' => 'https://html.design/',
+    'link_text' => 'Free Html Templates'
 
 ];

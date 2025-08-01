@@ -29,6 +29,6 @@
     ?>
 
     <!-- footer section -->
-    <?php include('./sections/footer.php'); set_footer(); ?>
+    <?php include('./sections/footer.php'); set_footer($footer); ?>
 
 <?php include('./sections/document-end.php'); ?>
